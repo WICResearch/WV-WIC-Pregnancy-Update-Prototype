@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Follow-Up Preferences | WV WIC</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fa;
+  margin: 0;
+  color: #24323c;
+}
+
+.demo-banner {
+  background: #fff3cd;
+  color: #664d03;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #d8e3e9;
+  padding: 22px;
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+header h2 {
+  color: #164b72;
+  margin: 0 0 4px;
+}
+
+header p {
+  margin: 0;
+  color: #60717d;
+}
+
+main {
+  max-width: 760px;
+  margin: 35px auto;
+  padding: 0 16px 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 6px 24px rgba(23,56,77,.08);
+}
+
+.progress-text {
+  color: #60717d;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 8px;
+  background: #e4edf2;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 75%;
+  background: #164b72;
+}
+
+h1 {
+  color: #164b72;
+  margin-top: 0;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+.question {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.choice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border: 1px solid #d8e3e9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background: #f7fafc;
+}
+
+.choice input {
+  margin-top: 3px;
+}
+
+.choice-text {
+  line-height: 1.45;
+}
+
+.small {
+  display: block;
+  color: #60717d;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+label.phone-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+#phone {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #aebdc6;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.notice {
+  background: #f3f8fb;
+  border-left: 4px solid #164b72;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.button-row {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.button {
+  border: none;
+  background: #164b72;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #e8eff3;
+  color: #164b72;
+}
+
+@media(max-width:550px) {
+  .card { padding: 24px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="demo-banner">
+DEMONSTRATION ONLY — DO NOT ENTER REAL PARTICIPANT INFORMATION
+</div>
+
+<header>
+<div class="header-inner">
+  <h2>West Virginia WIC</h2>
+  <p>Pregnancy Information Update</p>
+</div>
+</header>
+
+<main>
+
+<div class="card">
+
+<div class="progress-text">
+Step 3 of 4
+</div>
+
+<div class="progress">
+  <div class="progress-bar"></div>
+</div>
+
+<h1>How would you like WIC to follow up?</h1>
+
+<p class="description">
+We want to respect how you would prefer to communicate with us.
+Choose the option that feels most comfortable for you.
+</p>
+
+<div class="question">Contact preference</div>
+
+<label class="choice">
+  <input type="radio" name="contact" value="no-call">
+  <span class="choice-text">
+    <strong>No phone call, if possible</strong>
+    <span class="small">
+      Please update my WIC information and contact me only
+      if additional information is required.
+    </span>
+  </span>
+</label>
+
+<label class="choice">
+  <input type="radio" name="contact" value="text">
+  <span class="choice-text">
+    <strong>Text me</strong>
+    <span class="small">
+      I would prefer WIC to contact me by text.
+    </span>
+  </span>
+</label>
+
+<label class="choice">
+  <input type="radio" name="contact" value="call">
+  <span class="choice-text">
+    <strong>Call me</strong>
+    <span class="small">
+      I would prefer to speak with WIC staff by phone.
+    </span>
+  </span>
+</label>
+
+<label class="phone-label" for="phone">
+Best phone number
+</label>
+
+<input id="phone" type="tel" placeholder="(304) 555-0000">
+
+<div class="question">
+Would you like information about support or resources?
+</div>
+
+<label class="choice">
+  <input type="radio" name="resources" value="yes">
+  <span class="choice-text">
+    <strong>Yes, please send me information.</strong>
+  </span>
+</label>
+
+<label class="choice">
+  <input type="radio" name="resources" value="no">
+  <span class="choice-text">
+    <strong>No, thank you.</strong>
+  </span>
+</label>
+
+<div class="notice">
+Requesting support resources will not require you to explain
+the circumstances surrounding your pregnancy ending.
+</div>
+
+<div class="button-row">
+
+<a href="pregnancy-update.html" class="button secondary">
+Back
+</a>
+
+<a href="review.html" class="button">
+Review
+</a>
+
+</div>
+
+</div>
+</main>
+
+</body>
+</html>
