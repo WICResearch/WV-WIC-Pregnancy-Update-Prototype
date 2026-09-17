@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pregnancy Update | WV WIC</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fa;
+  margin: 0;
+  color: #24323c;
+}
+
+.demo-banner {
+  background: #fff3cd;
+  color: #664d03;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #d8e3e9;
+  padding: 22px;
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+header h2 {
+  color: #164b72;
+  margin: 0 0 4px;
+}
+
+header p {
+  margin: 0;
+  color: #60717d;
+}
+
+main {
+  max-width: 760px;
+  margin: 35px auto;
+  padding: 0 16px 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 6px 24px rgba(23,56,77,.08);
+}
+
+.progress-text {
+  color: #60717d;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 8px;
+  background: #e4edf2;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 25%;
+  background: #164b72;
+}
+
+h1 {
+  color: #164b72;
+  margin-top: 0;
+}
+
+.description {
+  line-height: 1.5;
+  color: #53636d;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 7px;
+}
+
+.optional {
+  font-weight: normal;
+  color: #60717d;
+}
+
+input, select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #aebdc6;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.help {
+  font-size: 13px;
+  color: #60717d;
+  margin-top: 6px;
+}
+
+.button-row {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  background: #164b72;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #e8eff3;
+  color: #164b72;
+}
+
+@media(max-width:550px) {
+  .card { padding: 24px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="demo-banner">
+DEMONSTRATION ONLY — DO NOT ENTER REAL PARTICIPANT INFORMATION
+</div>
+
+<header>
+  <div class="header-inner">
+    <h2>West Virginia WIC</h2>
+    <p>Pregnancy Information Update</p>
+  </div>
+</header>
+
+<main>
+
+<div class="card">
+
+<div class="progress-text">
+Step 1 of 4
+</div>
+
+<div class="progress">
+  <div class="progress-bar"></div>
+</div>
+
+<h1>First, tell us who you are</h1>
+
+<p class="description">
+This information helps WIC locate the correct participant record.
+</p>
+
+<form>
+
+<label for="firstName">First name</label>
+<input id="firstName" type="text" autocomplete="given-name">
+
+<label for="lastName">Last name</label>
+<input id="lastName" type="text" autocomplete="family-name">
+
+<label for="dob">Date of birth</label>
+<input id="dob" type="date">
+
+<label for="wicID">
+WIC ID <span class="optional">(optional)</span>
+</label>
+
+<input id="wicID" type="text">
+
+<p class="help">
+If you don't know your WIC ID, you can leave this blank.
+</p>
+
+<label for="clinic">Your WIC clinic</label>
+
+<select id="clinic">
+  <option value="">Select your clinic</option>
+  <option>Huntington</option>
+  <option>Charleston</option>
+  <option>Morgantown</option>
+  <option>Parkersburg</option>
+  <option>Martinsburg</option>
+  <option>I'm not sure</option>
+</select>
+
+<p class="help">
+The final version would contain the complete list of WV WIC clinics.
+</p>
+
+<div class="button-row">
+
+<a href="participant.html" class="button secondary">
+Back
+</a>
+
+<button type="button" class="button">
+Next
+</button>
+
+</div>
+
+</form>
+
+</div>
+</main>
+
+</body>
+</html>
